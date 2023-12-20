@@ -29,7 +29,7 @@ function YourCart() {
       ) : (
         <div className="space-y-[40px] flex-1 overflow-y-auto max-h-full no-scrollbar pt-4">
           {basket.map((product) => (
-            <CartItem product={product} />
+            <CartItem product={product} key={product.id} />
           ))}
         </div>
       )}
